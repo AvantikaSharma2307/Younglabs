@@ -8,7 +8,7 @@ async function submitName() {
     }
 
     try {
-        const response = await fetch(`http://localhost:3000/api/greet?name=${encodeURIComponent(name)}`);
+        const response = await fetch(`https://younglabs-2.onrender.com/api/greet?name=${encodeURIComponent(name)}`);
         
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
