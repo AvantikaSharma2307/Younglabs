@@ -1,43 +1,87 @@
+
 body {
     background-color: #121212;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
+
+
 .container {
     text-align: center;
     background: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease-in-out;
 }
+
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+
 input {
-    padding: 10px;
-    width: 200px;
+    padding: 12px;
+    width: 220px;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 6px;
     background: #333;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
-    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0px 0px 7px rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease-in-out;
 }
+
+
+input:focus {
+    box-shadow: 0px 0px 12px rgba(98, 0, 234, 0.7);
+}
+
+
 button {
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 12px;
+    padding: 12px 24px;
     border: none;
-    background: #6200ea;
+    background: linear-gradient(45deg, #6200ea, #9c27b0);
     color: white;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 18px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
+
+
 button:hover {
-    background: #3700b3;
+    background: linear-gradient(45deg, #3700b3, #6a1b9a);
+    box-shadow: 0px 0px 15px rgba(156, 39, 176, 0.6);
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+#responseMessage {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #03dac6;
+    opacity: 6;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.show-message {
+    opacity: 1 !important;
 }
