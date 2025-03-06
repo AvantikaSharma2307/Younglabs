@@ -14,5 +14,5 @@ A simple web app that greets users by their name. The app features a **dark-them
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Node.js, Express.js  
 
----
+
 
